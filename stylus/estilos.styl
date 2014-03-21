@@ -1,0 +1,117 @@
+@import "normalize.styl"
+@import "fonts.styl"
+
+//Se pueden crear variables
+gris_oscuro = #333333
+gris_claro = #818181
+rojo = #BD255B
+//icomoon.io
+a
+	text-decoration none
+body
+	font-family 'Varela Round', sans-serif
+	font-size 16px //16px será el padre y equivale a 1em ahora
+figure
+	margin 0
+	position relative
+.action
+	color white
+	font-size 1.2em
+	margin-right .5em
+	&:last-child
+		margin-right 0
+	&.gray
+		color gris_claro
+	&.red
+		color red
+.actions
+	background rgba(black,0.5)
+	position absolute
+	bottom 5px
+	left 0 
+	right 0
+	padding 0.5em
+.button-menu
+	left 1.5em
+	margin-top -10px
+	position absolute //hace que no afecte a los elementos circundantes, lo pone a volar
+	top 50% //lo ubica al 10% de la altura del navegador
+.border-bottom
+	border-bottom 1px solid gris_claro
+.container
+	padding 1.4rem
+	font-size 0
+	text-align center
+.name
+	color gris_oscuro
+.menu
+	display none
+.autor
+	color gris_claro
+//clases utilitarias
+.relative
+	position relative
+.center-block
+	margin 0 auto
+.center-text
+	text-align center
+.right-text
+	text-align right
+.padding
+	padding 1em
+.padding-tb
+	padding 1em 0
+.header
+	height 3.5em
+	.title
+		font-size 1.1em
+		text-align center
+		margin 0 
+		line-height 3.5em
+.song
+	display inline-block
+	font-size 1rem
+	margin-right 1em
+	margin-bottom 1em
+	text-align left
+	width 8rem
+	/*&:nth-child(even)
+		margin-right 0*/
+	p
+		margin .5em 0
+.playing
+	&.small
+		width 20em
+.progress
+	margin 1em 0
+	position relative
+	.min 
+	.max
+		font-size .8em
+		top 0
+	.min
+		position absolute
+		left 0
+	.max
+		position absolute
+		right 0
+	.total
+		height 5px
+		background gris_claro
+		border-radius 5px
+		width 75%
+		margin 0 auto
+	.state
+		height 5px
+		background rojo
+		width 30%
+		position relative
+		border-radius 5px
+	.circle
+		background gris_oscuro
+		border-radius 50%
+		height 10px
+		position absolute
+		right 0
+		top -2px
+		width 10px
